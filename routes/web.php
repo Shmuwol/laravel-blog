@@ -2,6 +2,8 @@
 
 use App\Post;
 
+Route::get('/posts', 'PostsController@index');
+
 Route::get('/posts', function () {
 
   // $posts = DB::table('posts')->latest()->get();
