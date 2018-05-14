@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+@extends('layouts.master')
+
+@section('content')
+  <div class="col-sm-8 blog-main">
     <h1>{{$post->title}}</h1>
     <p>{{$post->content}}</p>
-  </body>
-</html>
+  </div>
+@endsection
