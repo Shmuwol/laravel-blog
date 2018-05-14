@@ -25,7 +25,22 @@ class PostsController extends Controller
     public function create()
     {
 
-      
+
       return view('posts.create');
     }
+
+    public function store()
+    {
+
+
+
+      Post::create([
+        'title' => request('title'),
+        'content' => request('content')
+      ]);
+
+      return redirect('/');
+    }
+
+
 }
